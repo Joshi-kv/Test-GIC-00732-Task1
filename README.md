@@ -59,7 +59,7 @@ python manage.py runserver
 ## API
 Base URL (dev): `http://127.0.0.1:8000/`
 
-- POST `/api/upload-file/`
+- POST `v1/api/upload-file/`
   - Description: Upload a CSV file.
   - Form field: `file` (multipart/form-data)
   - Success: `201 Created`

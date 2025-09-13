@@ -12,7 +12,7 @@ class FileUploadView(APIView):
     """
     Handle file uploads and process them.
     
-    endpoint: /api/v1/upload-file/
+    endpoint: /v1/api/upload-file/
     Method: POST
     it accepts a csv file and processes it using FileUploadSerializer.
     
