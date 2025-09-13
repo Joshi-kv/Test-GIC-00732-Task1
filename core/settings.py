@@ -129,8 +129,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 #rate limit variables
-RATE_LIMIT = 5
-RATE_LIMIT_TIME_PERIOD = 120
+RATE_LIMIT = 100 # number of requests, change as needed
+RATE_LIMIT_TIME_PERIOD = 300  # in seconds, change as needed
 
 #Redis settings
 CACHES = {

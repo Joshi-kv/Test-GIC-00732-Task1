@@ -78,8 +78,8 @@ curl -X POST \
 ## Rate Limiting
 - Middleware: `core.middlewares.rate_limiting_middleware.RateLimitMiddleware`
 - Defaults (see `core/settings.py`):
-  - `RATE_LIMIT = 5` requests
-  - `RATE_LIMIT_TIME_PERIOD = 120` seconds
+  - `RATE_LIMIT = 100` requests
+  - `RATE_LIMIT_TIME_PERIOD = 300` seconds
 - Uses Redis with per-IP keys. When exceeded, returns `429 Too Many Requests` with `Retry-After`.
 
 To change the limits, update in `core/settings.py`:
